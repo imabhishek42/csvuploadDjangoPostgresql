@@ -27,5 +27,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^upload/csv/$', views.upload_csv, name='upload_csv'),
+    url(r'^upload/success/$', views.success, name='success'),
+    url(r'^upload/error/$', views.error, name='error'),
 ]
 

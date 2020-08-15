@@ -1,3 +1,7 @@
+<center>
+
+<h1> Upload a csv file only </h1>
+
 <form action="{% url 'upload_csv' %}" method="POST" enctype="multipart/form-data"> 
 {% csrf_token %}
 <div>
@@ -12,3 +16,5 @@
   </div> 
 </div>
 </form>
+
+</center>
